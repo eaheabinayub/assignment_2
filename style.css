@@ -281,6 +281,7 @@ footer a {
 
 /* Media Query */
 @media screen and (max-width: 576px) {
+  /* nav part */
   .nav-menu {
     display: none;
   }
@@ -291,6 +292,7 @@ footer a {
     width: 63px;
     height: 38px;
   }
+  /* banner part */
   .banner {
     flex-direction: column-reverse;
   }
@@ -303,11 +305,12 @@ footer a {
   .banner-description {
     font-size: 16px;
   }
-  .our-plants-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  /* Our Plants part */
   .our-plants {
     margin: -65px 12px 40px 8px;
+  }
+  .our-plants-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
   .plants-lover {
     flex-direction: column;
