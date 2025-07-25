@@ -44,6 +44,10 @@ a {
   color: white;
   border: none;
 }
+.common-font {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 
 /* nav styles */
 nav {
@@ -130,6 +134,150 @@ nav {
 .card button {
   font-weight: 600;
 }
+/* plants-lover part styles */
+.plants-lover {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 130px;
+}
+.plants-lover-image {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 420px;
+  top: 100px;
+}
+.plants-lover-content {
+  padding-top: 110px;
+}
+.plants-lover-content-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.plants-lover-content-description li {
+  list-style: disc;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+/* Latest-Deals part styles */
+.Latest-Deals {
+  margin-bottom: 120px;
+}
+.latest-deals-heading {
+  text-align: center;
+}
+.latest-deals-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.latest-deals-description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 16px 0px 120px 0px;
+}
+.latest-deals-contents {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+}
+.deals-content-1 {
+  background-image: url("./assets/deal-bloom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 25px 60px 25px;
+  color: white;
+  border-radius: 14px;
+}
+#deals-content-2 {
+  background-image: url("./assets/deal-zabo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 160px 200px 160px 200px;
+  color: white;
+  border-radius: 22px;
+  grid-row: span 2;
+}
+.deals-content-3 {
+  background-image: url("./assets/deal-ana.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 25px 60px 25px;
+  color: white;
+  border-radius: 14px;
+}
+.latest-deals-contents h5 {
+  font-weight: 600;
+}
+.latest-deals-contents h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.product {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.product-big {
+  font-size: 2.3rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+/* colorful-bunch styles */
+.colorful-bunch {
+  background-image: url("./assets/news-letter-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.colorful-bunch-content {
+  padding: 199px 305px 193px 305px;
+}
+.colorful-bunch-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-bottom: 23px;
+}
+.colorful-bunch-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.colorful-bunch-form input {
+  padding: 19px 540px 19px 20px;
+  color: #000000;
+  border: none;
+}
+/* footer part styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px 50px 0px;
+}
+.footer-description {
+  max-width: 355px;
+}
+.footer-description img {
+  padding-bottom: 16px;
+}
+footer a {
+  color: #6b7280;
+}
+.footer-items-left {
+  display: grid;
+  gap: 32px;
+}
+.footer-items-right {
+  display: grid;
+  gap: 32px;
+}
+.footer-clickable-logo a {
+  padding-right: 24px;
+}
 
 /* Media Query */
 @media screen and (max-width: 576px) {
@@ -160,5 +308,53 @@ nav {
   }
   .our-plants {
     margin: -65px 12px 40px 8px;
+  }
+  .plants-lover {
+    flex-direction: column;
+    margin-bottom: 140px;
+  }
+  .plants-lover-image {
+    margin: 40px 12px 0px 12px;
+  }
+  .plants-lover img {
+    width: 100%;
+  }
+  .plants-lover-content-description li {
+    margin: 0px 15px 0px 30px;
+    margin-bottom: 16px;
+  }
+  .plants-lover-content-title {
+    margin: 0px 15px 16px 15px;
+  }
+  .colorful-bunch-content {
+    padding: 110px 35px 64px 15px;
+  }
+  .colorful-bunch-form input {
+    padding: 19px 50px 19px 20px;
+  }
+  .btn-last {
+    padding: 19px 20px 19px 20px;
+  }
+  .colorful-bunch-title {
+    font-size: 1.3rem;
+  }
+  footer {
+    display: block;
+    padding: 50px 0px 50px 20px;
+  }
+  .footer-clickable-logo {
+    padding-top: 20px;
+  }
+  .latest-deals-contents {
+    grid-template-columns: 1fr;
+  }
+  #deals-content-2 {
+    padding: 60px 25px 60px 25px;
+  }
+  .product-big {
+    font-size: 1.8rem;
+  }
+  .plants-lover-image {
+    display: none;
   }
 }
