@@ -1,5 +1,4 @@
 /* font family */
-
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -12,4 +11,154 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+/* Shared styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.gray-color {
+  color: #000000;
+  opacity: 50%;
+}
+.orange-color {
+  color: #e95a08;
+}
+.btn {
+  padding: 19px 80px 19px 80px;
+  background-color: #e95a08;
+  color: white;
+  border: none;
+}
+
+/* nav styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px 120px 0px;
+}
+.nav-menu {
+  gap: 48px;
+  padding-right: 48px;
+}
+.nav-menu-1 {
+  color: #252432;
+  font-weight: 600;
+}
+.nav-menu-2 {
+  color: #8987a1;
+}
+.nav-cart {
+  gap: 10px;
+}
+
+/* Banner styles */
+.banner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.banner-title {
+  font-weight: bold;
+  font-size: 4rem;
+}
+.banner-description {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.banner-image {
+  width: 100%;
+}
+/* Our Plants part styles */
+.our-plants {
+  margin-bottom: 210px;
+}
+.our-plants-heading {
+  text-align: center;
+}
+.our-plants-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.our-plants-description {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 16px 0px 49px 0px;
+}
+.our-plants-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+}
+.card {
+  max-width: 270px;
+}
+.card img {
+  width: 100%;
+}
+.card-description {
+  text-align: center;
+  padding-top: 30px;
+}
+.card-name {
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #111111;
+}
+.card-price {
+  padding: 20px 0px 30px 0px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #111111;
+}
+.card button {
+  font-weight: 600;
+}
+
+/* Media Query */
+@media screen and (max-width: 576px) {
+  .nav-menu {
+    display: none;
+  }
+  nav {
+    margin: 67px 16px 28px 16px;
+  }
+  nav img {
+    width: 63px;
+    height: 38px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    margin: 28px 16px 65px 16px;
+  }
+  .banner-title {
+    font-size: 32px;
+  }
+  .banner-description {
+    font-size: 16px;
+  }
+  .our-plants-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .our-plants {
+    margin: -65px 12px 40px 8px;
+  }
 }
